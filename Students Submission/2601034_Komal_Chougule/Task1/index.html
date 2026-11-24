@@ -1,122 +1,51 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Task1</title>
-    <!-- Connect external CSS file -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- NAVIGATION BAR-->
-    <header class="navbar">
-        <!-- Website Logo and Name -->
-        <a class="logo">
-            <img src="./Assets/04.png">
-            <h3>DSA Tracker</h3>
-        </a>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul class="nav-links">
-                <li class="active">Home</li>
-                <li>Problems</li>
-                <li>Leaderboard</li>
-                <li>About</li>
-            </ul>
-        </nav>
-        <!-- Get Started Button -->
-        <button class="get-started">Get Started</button>
-
-    </header>
-
-
-    <main>
-
-        <!-- page upper section -->
-
-        <section class="page">
-
-            <!-- Left Side Content -->
-            <div class="page-content">
-
-                <!-- Main Heading -->
-                <h1>
-                    Practice DSA<br>
-                    Track Progress<br>
-                    Become <span>Job Ready</span>
-                </h1>
-
-                <!-- Description -->
-                <p>
-                    Solve daily coding problems, track your progress,
-                    and build a strong DSA foundation.
-                </p>
-
-                <!-- page Buttons -->
-                <div class="page-buttons">
-
-                    <button class="first-btn">
-                        Start Practicing  →
-                    </button>
-
-                    <button class="second-btn">
-                        View Problems
-                    </button>
-
-                </div>
-
+    <head>
+        <title>Task 1</title>
+        <link  rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header> <!--header tag is used to create header data-->
+            <div class = "img_msg"> <!--this div tag is used to create image and small text-->
+                <img src = "./Assets/04.png">
+                <h1>DSA Tracker</h1>
             </div>
-
-
-            <!-- Right Side Student Image-->
-            <div class="page-image">
-                <img src="./Assets/05.png">
+            <div> <!-- this div tag is used to create navbar data-->
+                <ul>
+                    <li class = "active">Home</li>
+                    <li>Problems</li>
+                    <li>Leaderboard</li>
+                    <li>About</li>
+                </ul>
             </div>
-        </section>
-
-        <!-- FEATURES SECTION -->
-
-        <section class="features" id="about">
-
-            <!-- Feature Card 1 -->
-            <article class="feature-card">
-
-                <img src="./Assets/03.png"
-                     alt="Daily Challenges">
-
+        <button class="get-started">Get Started</button> <!--create one button-->
+        </header>
+        <div class = "page" > <!--this div tag is used to create upper part of page -->
+            <div class = "page-content"> <!--this div tag is used to create left side page-->
+                <h1>Practice DSA <br>Track Progress <br>Become <span class = "b-color">Job Ready</span></h1>
+                <p class ="msg">Solve daily coding problems, track your progress <br>and build a strong DSA Foundation</p>
+                <button class = "btn1"> Start Practicing →</button>
+                <button class = "btn2">View Problems</button>
+            </div>
+            <div class ="image"> <!-- this div tag is used to display image -->
+                <img src = "./Assets/05.png">
+            </div>
+        </div>
+        <div class = "box"> <!--this div tag is used to create boxes-->
+            <div class = "box1">
+                <img src ="./Assets/03.png">
                 <h2>Daily Challenges</h2>
-
                 <p>Solve a new problem every day</p>
-
-            </article>
-
-
-            <!-- Feature Card 2 -->
-            <article class="feature-card">
-
-                <img src="./Assets/02.png"
-                     alt="Track Progress">
-
+            </div>
+            <div class = "box1">
+                <img src ="./Assets/02.png">
                 <h2>Track Progress</h2>
-
-                <p>See your improvement over time</p>
-
-            </article>
-
-
-            <!-- Feature Card 3 -->
-            <article class="feature-card">
-
-                <img src="./Assets/01.png"
-                     alt="Leaderboard">
-
+                <p>See your improvement over time
+            </div>
+            <div class = "box1">
+                <img src ="./Assets/01.png">
                 <h2>Leaderboard</h2>
-
-                <p>Compete with your peers</p>
-
-            </article>
-        </section>
-
-    </main>
-
-</body>
-
+                <p>Complete with your peers</p>
+            </div>
+        </div>
+    </body>
 </html>
