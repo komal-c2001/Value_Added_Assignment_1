@@ -1,0 +1,333 @@
+/* Main page background */
+body {
+  background-color: #f8f9fc; /* set background color of body */
+  color: #1f2937; /* set font color of all text */
+  width : 1500px; /* set width of page */
+  font-family: Arial, Helvetica, sans-serif; /* all content is used this font family*/
+}
+.page {
+  display: flex; /* Arranges items in a flexible row */
+  height: 100vh; /*set height */
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1e1538; /* Dark purple sidebar */
+  color: #ffffff;
+  padding: 22px 15px; /* set padding */
+  display: flex;
+  flex-direction: column; /* Arranges flex items vertically, from top to bottom */
+}
+
+.header {
+  display: flex;
+  align-items: center; /* items to the center*/
+  gap: 10px; /* gap between two items */
+  margin-bottom: 28px; /* set margin to bottom */
+  padding: 0 6px;
+}
+.sidebar-divider {
+  border: none;  /* set border is none */
+  border-top: 3px solid #372d58; /* set border to top of the items */
+  margin: 18px 0;
+}
+
+.logo-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain; /* fit image without cropping */
+}
+
+.portal-title {
+  font-size: 16px; /* set size of text */
+  font-weight: bold;/* set thickness of text */
+  line-height: 1.2; /* set height of line */
+}
+
+/* Sidebar menu items */
+.nav-list {
+  list-style: none; /* set list style is none */
+  flex: 1; /* Allows the element to grow and occupy the available space in its flex container */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+/* Active menu button highlight */
+.nav-item.active {
+  background-color: #6d28d9;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+/* Logout link at bottom */
+.logout-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+/* ================= RIGHT MAIN AREA ================= */
+.main-area {
+  flex: 1; /* Takes remaining width beside sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between; /* Distributes items with maximum space between them */
+  border-bottom: 1px solid #eeeeF5;
+  align-items: center;
+}
+
+.dash {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.bell {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+/* Profile picture */
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 22px auto;
+  padding: 0 22px;
+}
+
+/* ================= Welcome Message ================= */
+.welcome-msg {
+  background-color: #ede9fe;
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-msg h1 {
+  font-size: 35px;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.welcome-msg p {
+  font-size: 20px;
+  color: #4b5563;
+}
+
+.computer-img {
+  width: 400px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* ================= ROW (4 CARDS) ================= */
+.row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Card background colors */
+.card-purple { background-color: #ede9fe; }
+.card-green  { background-color: #dcfce7; }
+.card-yellow { background-color: #fef3c7; }
+.card-pink   { background-color: #ffe4e6; }
+
+.card-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.label {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+/* ================= BOTTOM TWO COLUMNS ================= */
+.bottom-row {
+  display: flex;
+  gap: 20px;
+}
+
+.panel {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.panel h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+/* ================= COURSES LIST ================= */
+.course-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.course-sub {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* Progress bar */
+.course-progress {
+  width: 90px;
+  text-align: right;
+}
+
+.percent {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bar-bg {
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: #6d28d9;
+  border-radius: 10px;
+}
+
+/* ================= ASSIGNMENTS LIST ================= */
+.assignment-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 3px solid #f3f4f6;
+}
+
+.assignment-item:last-child {
+  border-bottom: none;
+}
+
+.doc-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.assignment-info {
+  flex: 1;
+}
+
+.assignment-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.assignment-date {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 3px;
+}
+.pending {
+  background-color: #ffe4e6;
+  color: #e11d48;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
